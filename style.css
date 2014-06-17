@@ -23,6 +23,7 @@ body, html {
 
 #content {
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 #footer {
