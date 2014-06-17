@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+#container {
+    background: #f00; /* styling only */
+    position: relative;
+    height: auto !important;
+    min-height: 100%;
+    height: 100%;
+}
+
+#content {
+    padding-bottom: 100px;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: #0f0;
+}
