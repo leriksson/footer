@@ -1,12 +1,14 @@
 * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px dashed #000;
-
 }
 
 body, html {
     height: 100%;
+    min-width: 510px;
 }
 
 #container {
@@ -17,20 +19,40 @@ body, html {
     height: 100%;
 }
 
-.video {
-    float: left;
+#content {
+    overflow: hidden;
+    padding: 30px 30px 80px 30px;
+    outline: 1px dashed #000;
+
 }
 
-#content {
-    padding-bottom: 100px;
-    overflow: hidden;
+.video {
+    float: left;
+    margin: 0 30px 20px 0;
+
 }
+
+
 
 #footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background: #0f0;
+}
+
+.logo {
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+/* woo */
+
+@media only screen and (max-width: 600px) {
+    #footer {background: red;}
+    iframe { width: 448px; height: 252px}
+
 }
